@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+			integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc="
+			crossorigin="anonymous"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css?family=Lora:400,700|Roboto+Slab:400,700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="stylehomes.css" />
+		<title>Document</title>
+	</head>
+	<body>
+		<header>
+			<button class="nav-toggle" aria-label="toggle navigation">
+				<span class="hamburger"></span>
+			</button>
+			<nav class="nav">
+				<ul class="nav__list">
+					<li class="nav__item">
+						<a href="homes.html" class="nav__link">Homes</a>
+					</li>
+					<li class="nav__item">
+						<a href="#about" class="nav__link">Advertise</a>
+					</li>
+					<li class="nav__item">
+						<a href="#work" class="nav__link">Help</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="logo">
+				<a class="header-logo" href="index.html"> Holiday Home Finder </a>
+			</div>
+			<span> <a href="signin.html" class="sign-btn">Sign in</a></span>
+		</header>
+				<section class="filter-nav">
+					<div class="search-container">
+						<input
+							class="search-home"
+							type="text"
+							placeholder="Search location here..."
+							name="search"
+						/><button type="submit" class="search-btn">
+							<i class="fas fa-search"></i>
+						</button>
+						<div class="filter-btns">
+							<div class="filter-btn">
+								<button class="f-btn"><span>Rating</span></button>
+							</div>
+							<div class="filter-btn">
+								<button class="f-btn"><span>Holiday</span></button>
+							</div>
+							<div class="filter-btn">
+						</div>
+					</div>
+				</section>
+		<div class="results-container">	
+			<div class="map" id="map"></div>
+						<div class="search-list-results">
+							<div class="search-page-header">
+								<h3 class="search-header-top">Homes Near You</h3>
+								<div class="search-header-bottom">
+									<span class="resultnumber"># of results</span>
+									<div class="sortby">
+										<strong>Sort by:</strong>
+									</div>
+								</div>
+							</div>
+							<ul class="photo-cards">
+								<li>
+									<Article class="list-card">
+										<div class="list-card-top">
+											<img src="images/homebackground.jpeg" alt="">
+										</div>
+										<div class="list-card-info">
+											<a href="#">
+												<address class="list-card-adress">######</address>
+											</a>
+											<div class="list-card-footer">Rating:</div>
+										</div>
+									</Article>
+								</li>
+								<li>
+									<Article class="list-card">
+										<div class="list-card-top">
+											<img src="images/house1.jpg" alt="">
+										</div>
+										<div class="list-card-info">
+											<a href="#">
+												<address class="list-card-adress">######</address>
+											</a>
+											<div class="list-card-footer">Rating:</div>
+										</div>
+									</Article>
+								</li>
+								<li>
+									<Article class="list-card">
+										<div class="list-card-top">
+											<img src="images/house2.jpg" alt="">
+										</div>
+										<div class="list-card-info">
+											<a href="#">
+												<address class="list-card-adress">######</address>
+											</a>
+											<div class="list-card-footer">Rating:</div>
+										</div>
+									</Article>
+								</li>
+								<li>
+									<Article class="list-card">
+										<div class="list-card-top">
+											<img src="images/house3.jpg" alt="">
+										</div>
+										<div class="list-card-info">
+											<div class="list-card-header"></div>
+											<a href="#">
+												<address class="list-card-adress">######</address>
+											</a>
+											<div class="list-card-footer">Rating:</div>
+										</div>
+									</Article>
+								</li>
+							</ul>
+							<!-- Footer -->
+		<footer class="footer">
+			<!-- replace with your own email address -->
+			<a href="index.html" class="footer__link">© Holiday Home Finder</a>
+			<ul class="social-list">
+				<li class="social-list__item">
+					<a
+						class="social-list__link"
+						target="_blank"
+						href="https://www.instagram.com/prestonhendrick/"
+					>
+						<i class="fab fa-instagram"></i>
+					</a>
+				</li>
+				<li class="social-list__item">
+					<a
+						class="social-list__link"
+						target="_blank"
+						href="https://www.linkedin.com/in/prestonhendrick"
+					>
+						<i class="fab fa-linkedin"></i>
+					</a>
+				</li>
+				<li class="social-list__item">
+					<a
+						class="social-list__link"
+						target="_blank"
+						href="https://github.com"
+					>
+						<i class="fab fa-github"></i>
+					</a>
+				</li>
+			</ul>
+		</footer>
+
+						</div>	
+		</div>
+		<script src="index.js"></script>
+		<script
+			async
+			defer
+			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDlZXovONgrv5eodZGXq8tAKhUOlpOPOvk&callback=initMap"
+			type="text/javascript"
+		></script>
+	</body>
+</html>
